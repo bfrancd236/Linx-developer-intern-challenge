@@ -1,0 +1,167 @@
+*{
+    font-family: 'Roboto', 'Roboto Slab';
+}
+
+body{
+    margin: 0;
+    background-color: #EEE;
+    font-family: 'Roboto', 'Roboto Slab';
+    text-align: center;
+}
+
+.menu {
+    background-color: #EEE;
+    padding: 15px;
+    align-items: center;
+}
+
+.cardContainer {
+    position: relative;
+    padding: 200px 0px;
+    width: 100%;
+    background-image: url(./components/img/background-home.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    margin-block-start: 0;
+    color: white;
+}
+
+.cardContainer h1{
+    margin-block-start: 0;
+    font-size: 50px;
+}
+
+.cardContainer p{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.cardContainer form {
+    margin-top: 10px;
+}
+
+.cardContainer input{
+    background: none ;
+    border: 0;
+    border-bottom: solid rgb(250, 138, 34);
+    outline: 0;
+    width: 400px;
+    margin-top: 50px;
+    color: rgb(250, 138, 34);
+    padding: 0 4px 4px 0;
+}
+
+.cardContainer input::placeholder{ 
+    color: rgb(250, 138, 34);
+  }
+
+.cardContainer button{
+    background-color: rgb(250, 138, 34);
+    height: 45px;
+    border: 0;
+    margin-left: 10px;
+    padding: 13.5px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Roboto';
+    transition: 2s;
+}
+
+.cardContainer button:hover{
+    color: #AA1423;
+}
+
+.cardContainer h2{
+    margin-top: 30px;
+}
+
+.topContainer h1,
+.HitsContainer h1{
+    margin-top: 50px;
+    color: #AA1423;
+}
+
+.topContainer table{
+    display: inline-table;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 70px;
+}
+
+.topContainer table tr{
+    height: 50px;
+}
+
+.topContainer table .tdUrl{
+    color: #AA1423;
+}
+
+.topContainer table .tdQuantia{
+    color: #777;
+}
+
+.HitsContainer {
+    background-color: rgba(221, 221, 221, 0.308);
+    padding: 30px;
+}
+
+.HitsContainer h1 {
+    padding: 10px;
+}
+
+.HitsContainer label{
+    color: #AA1423;
+    font-size: 30px;
+    border: solid 1px rgba(189, 186, 186, 0.5);
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #EEE;
+}
+.HitsContainer p{
+    color: #777;
+}
+
+.footer {
+    display: relative;
+}
+
+.footer p{
+    float: left;
+    margin-left: 150px;
+    color: #AA1423;
+    font-size: 20px;
+}
+
+.footer .imgs-footer{
+    display: inline-flex;
+    float: right;
+    margin-right: 150px;
+}
+
+.footer img{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer button{
+        display: inline;
+    }
+    .cardContainer input{
+        width: 90%;
+        text-align: center;
+    }
+
+    .cardContainer {
+        background-image: url(./components/img/background-home.jpg);
+        background-position: center;
+        margin: 0;
+    }
+    .footer {
+        display: inline;
+        margin: 0;
+    }
+}
